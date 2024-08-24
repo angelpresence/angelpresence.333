@@ -1,106 +1,109 @@
 <!DOCTYPE html>
 <html lang="pl">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>angelpresence.333</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            background-color: #f4f4f4;
-            display: flex;
-            flex-direction: column;
-            min-height: 100vh;
-        }
-
-        @media (prefers-color-scheme: dark) {
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>angelpresence.333</title>
+        <style>
             body {
-                background-color: #f4f4f4 !important;
-                color: #000000 !important;
+                font-family: Arial, sans-serif;
+                margin: 0;
+                padding: 0;
+                background-color: #121212; /* Dark background */
+                color: #e0e0e0; /* Light text */
+                display: flex;
+                flex-direction: column;
+                min-height: 100vh;
             }
-
-            header, footer {
-                background-color: #333 !important;
-                color: #fff !important;
+    
+            header {
+                background-color: #1e1e1e; /* Dark header background */
+                color: #ffffff; /* Light text color for header */
+                padding: 10px;
+                text-align: center;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
             }
-
+    
+            header h1 {
+                margin: 0;
+                flex-grow: 1;
+            }
+    
+            header .buttons {
+                display: flex;
+                gap: 10px;
+            }
+    
+            .main-content {
+                display: flex;
+                flex-grow: 1;
+                padding: 10px;
+            }
+    
+            .sidebar-left, .sidebar-right {
+                width: 200px;
+                padding: 10px;
+            }
+    
+            .sidebar-left {
+                background-color: #242424; /* Dark sidebar background */
+            }
+    
+            .sidebar-right {
+                background-color: #1e1e1e; /* Dark sidebar background */
+            }
+    
+            .content {
+                flex-grow: 1;
+                padding: 10px;
+            }
+    
             .widget {
-                background-color: #ffffff !important;
-                color: #000000 !important;
+                background-color: #1e1e1e; /* Dark widget background */
+                color: #e0e0e0; /* Light text color for widgets */
+                margin-bottom: 20px;
+                padding: 10px;
+                box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); /* Darker shadow */
             }
-        }
-
-        header {
-            background-image: url('hdbg.jpg');
-            color: #fff;
-            padding: 10px;
-            text-align: center;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            color: white;
-            text-shadow: 2px 2px 4px #000000;
-        }
-
-        header h1 {
-            margin: 0;
-            flex-grow: 1;
-        }
-
-        header .buttons {
-            display: flex;
-            gap: 10px;
-        }
-
-        .main-content {
-            display: flex;
-            flex-grow: 1;
-            padding: 10px;
-        }
-
-        .sidebar-left, .sidebar-right {
-            width: 200px;
-            padding: 10px;
-        }
-
-        .sidebar-left {
-            background-color: #ddd;
-        }
-
-        .sidebar-right {
-            background-color: #f7f7f7;
-        }
-
-        .content {
-            flex-grow: 1;
-            padding: 10px;
-        }
-
-        .widget {
-            background-color: #ffffff;
-            margin-bottom: 20px;
-            padding: 10px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-        }
-
-        footer {
-            background-color: #333;
-            color: #fff;
-            text-align: center;
-            padding: 10px 0;
-            width: 100%;
-        }
-
-        img {
-            width: 100%;
-            height: auto;
-        }
-
-
-    </style>
-</head>
+    
+            footer {
+                background-color: #1e1e1e; /* Dark footer background */
+                color: #e0e0e0; /* Light text color for footer */
+                text-align: center;
+                padding: 10px 0;
+                width: 100%;
+            }
+    
+            img {
+                width: 100%;
+                height: auto;
+            }
+    
+            button {
+                background-color: #333; /* Dark button background */
+                color: #fff; /* Light text color for buttons */
+                border: none;
+                padding: 10px;
+                width: 100%;
+                margin-bottom: 10px;
+                cursor: pointer;
+            }
+    
+            button:hover {
+                background-color: #555; /* Slightly lighter on hover */
+            }
+    
+            a {
+                color: #bb86fc; /* Light purple for links */
+            }
+    
+            a:hover {
+                color: #e0e0e0; /* Lighter color on hover */
+            }
+        </style>
+    </head>
 <body>
     <header>
         <h1>angel ✞ presence</h1>
