@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>angelpresence.333</title>
+    <style>
+        @media (prefers-color-scheme: dark) {
+        body {
+            background-color: #f4f4f4 !important;
+            color: #000000 !important;
+        }
+
+        header, footer {
+            background-color: #333 !important;
+            color: #fff !important;
+        }
+
+        .widget {
+            background-color: #ffffff !important;
+            color: #000000 !important;
+        }
+    }
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 10px 0;
+            text-align: center;
+        }
+
+        widgets {
+            position: relative;
+            text-align: center;
+
+        }
+
+
+        footer {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 4px 0;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>angelpresence.333</h1>
+        <center><h2><TABLE BORDER=0 CELLSPACING=0 CELLPADDING=0><TR>
+            <TD ALIGN=CENTER><CENTER>Solar X-rays:<A HREF="http://www.n3kl.org/sun/noaa.html"><IMG WIDTH=121 
+            HEIGHT=21 BORDER=0 ALT="Status" SRC="http://www.n3kl.org/sun/images/status.gif?"></A></CENTER></TD>
+            </TR><TR><TD ALIGN=CENTER><CENTER>Geomagnetic Field:<A HREF="http://www.n3kl.org/sun/noaa.html"><IMG WIDTH=121 
+            HEIGHT=21 BORDER=0 ALT="Status" SRC="http://www.n3kl.org/sun/images/kpstatus.gif?"></A></CENTER></TD>
+            </TR></TABLE></TD><TD WIDTH=150>&nbsp;</TD></TR></TABLE>
+            </A></CENTER></h2></center>
+    </header>
+    <center>
+    <div id="widgets">
+        <!-- Wklej swoje widgety tutaj -->
+        <div class="widget">
+            <h2>Seismic Monitor</h2><p><iframe src="https://ds.iris.edu/seismon/index.phtml" width="800" height="500"></iframe></p>
+            
+        </div>
+        <div class="widget">
+            <h2>Volcano Monitor</h2>
+            <p><!-- begin VolcanoWidget -->
+                <iframe id="VW_iframe" width="800px" height="500" scrolling="no" frameborder="0" marginwidth="0" marginheight="0" src="https://earthquakes.volcanodiscovery.com"></iframe>
+                <!-- end VolcanoWidget / http://www.volcano-news.com/active-volcanoes-map/get-widget.html -->
+            </p>
+            <br>
+            <br>
+            <br>
+            
+        </div>
+        <div class="widget">
+            <h2>Solar Status</h2>
+            <p><iframe src="https://www.n3kl.org/sun/index.html" width="800" height="500" style="border:none;"></iframe></p>
+            <br>
+            <br>
+            <br>
+            
+        </div>
+    </div>
+    </center>
+
+    <footer>
+        <p>angelpresence co @ All Rights Reserved</p>
+    </footer>
+
+</body>
+</html>
