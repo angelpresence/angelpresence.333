@@ -5,106 +5,149 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>angelpresence.333</title>
     <style>
-        @media (prefers-color-scheme: dark) {
-        body {
-            background-color: #f4f4f4 !important;
-            color: #000000 !important;
-        }
-
-        header, footer {
-            background-color: #333 !important;
-            color: #fff !important;
-        }
-
-        .widget {
-            background-color: #ffffff !important;
-            color: #000000 !important;
-        }
-    }
         body {
             font-family: Arial, sans-serif;
             margin: 0;
             padding: 0;
             background-color: #f4f4f4;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+
+        @media (prefers-color-scheme: dark) {
+            body {
+                background-color: #f4f4f4 !important;
+                color: #000000 !important;
+            }
+
+            header, footer {
+                background-color: #333 !important;
+                color: #fff !important;
+            }
+
+            .widget {
+                background-color: #ffffff !important;
+                color: #000000 !important;
+            }
         }
 
         header {
-            background-color: #333;
+            background-image: url('hdbg.jpg');
             color: #fff;
-            padding: 10px 0;
+            padding: 10px;
             text-align: center;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
         }
 
-        widgets {
-            position: relative;
-            text-align: center;
-
+        header h1 {
+            margin: 0;
+            flex-grow: 1;
         }
 
+        header .buttons {
+            display: flex;
+            gap: 10px;
+        }
+
+        .main-content {
+            display: flex;
+            flex-grow: 1;
+            padding: 10px;
+        }
+
+        .sidebar-left, .sidebar-right {
+            width: 200px;
+            padding: 10px;
+        }
+
+        .sidebar-left {
+            background-color: #ddd;
+        }
+
+        .sidebar-right {
+            background-color: #f7f7f7;
+        }
+
+        .content {
+            flex-grow: 1;
+            padding: 10px;
+        }
+
+        .widget {
+            background-color: #ffffff;
+            margin-bottom: 20px;
+            padding: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
 
         footer {
             background-color: #333;
             color: #fff;
             text-align: center;
-            padding: 4px 0;
-            position: fixed;
-            bottom: 0;
+            padding: 10px 0;
             width: 100%;
         }
+
+        img {
+            width: 100%;
+            height: auto;
+        }
+
+
     </style>
 </head>
 <body>
-
     <header>
-        <h1>angelpresence.333</h1>
-        <center><h2><TABLE BORDER=0 CELLSPACING=0 CELLPADDING=0><TR>
-            <TD ALIGN=CENTER><CENTER>Solar X-rays:<A HREF="http://www.n3kl.org/sun/noaa.html"><IMG WIDTH=121 
-            HEIGHT=21 BORDER=0 ALT="Status" SRC="http://www.n3kl.org/sun/images/status.gif?"></A></CENTER></TD>
-            </TR><TR><TD ALIGN=CENTER><CENTER>Geomagnetic Field:<A HREF="http://www.n3kl.org/sun/noaa.html"><IMG WIDTH=121 
-            HEIGHT=21 BORDER=0 ALT="Status" SRC="http://www.n3kl.org/sun/images/kpstatus.gif?"></A></CENTER></TD>
-            </TR></TABLE></TD><TD WIDTH=150>&nbsp;</TD></TR></TABLE>
-            </A></CENTER></h2><button onclick="window.location.href='https://www.spaceweather.com'">Spaceweather.com</button></center>
+        <h1>angel ✞ presence</h1>
+        <div class="buttons">
+            <!-- Add more buttons here -->
+        </div>
     </header>
-    <center>
-    <div id="widgets">
-        <!-- Wklej swoje widgety tutaj -->
-        <div class="widget">
-            <h2></h2><p><iframe src="https://ds.iris.edu/seismon/index.phtml" width="1000" height="700"></iframe></p>
-            
+
+    <div class="main-content">
+        <div class="sidebar-left">
+            <!-- Shortcuts and links -->
+            <center><h3>Links</h3></center>
+            <ul>
+                <button onclick="window.location.href='https://www.spaceweather.com'">Spaceweather.com</button><br>
+                <button onclick="window.location.href='https://www.godlikeproductions.com'">Godlike Productions</button><br>
+                <button onclick="window.location.href='https://www.swpc.noaa.gov'">SWPC/NOAA</button><br>
+            </ul>
         </div>
-        <div class="widget">
-            <h2>Volcano Monitor</h2>
-            <p><!-- begin VolcanoWidget -->
-                <iframe id="VW_iframe" width="1000px" height="700" scrolling="no" frameborder="0" marginwidth="0" marginheight="0" src="https://earthquakes.volcanodiscovery.com"></iframe>
-                <!-- end VolcanoWidget / http://www.volcano-news.com/active-volcanoes-map/get-widget.html -->
-            </p>
-            <br>
-            <br>
-            <br>
-            
-        </div>
-        <div class="widget">
-            <h2>Solar Status</h2>
-            <p><iframe src="https://www.n3kl.org/sun/index.html" width="1000" height="700" style="border:none;"></iframe></p>
-            <br>
-            <br>
-            <br>
-            
-        </div>
-                <div class="card bg-light my-2">
-            <h3 class="card-header text-center">Auroral oval <span class="text-primary" data-bs-toggle="tooltip" data-bs-html="true"></span><br>
-            <a href="https://www.spaceweatherlive.com/images/grafieken/aurora-map.jpg" data-fancybox="aurora-map">
-                <img class="card-img-top" id="Aurora_Map" src="https://www.spaceweatherlive.com/images/grafieken/aurora-map.jpg" loading="lazy" alt="Aurora map">
-            </a>
-            <br>
-            <br>
+
+        <div class="content">
+            <div class="widget">
+                <center><iframe src="https://ds.iris.edu/seismon/index.phtml" width="69%" height="600"></iframe></center>
             </div>
+            <div class="widget">
+                <h2>Volcano Monitor</h2>
+                <iframe id="VW_iframe" width="100%" height="800" src="https://earthquakes.volcanodiscovery.com"></iframe>
+            </div>
+            <div class="widget">
+                <h2>Solar Status</h2>
+                <iframe src="https://www.n3kl.org/sun/index.html" width="100%" height="500" style="border:none;"></iframe>
+            </div>
+            <div class="widget">
+                <center><h3>Auroral Oval</h3></center>
+                <a href="https://www.spaceweatherlive.com/images/grafieken/aurora-map.jpg" data-fancybox="aurora-map">
+                    <center><img src="https://www.spaceweatherlive.com/images/grafieken/aurora-map.jpg" alt="Aurora map" style="width:60%;"></center>
+                </a>
+            </div>
+        </div>
+
+        <div class="sidebar-right">
+            <!-- Ads -->
+            <div class="img"><img src="ad1.jpg" alt="ad"></div>
+            <div class="img"><img src="ad2.jpg" alt="ad"></div>
+            <div class="img"><img src="ad3.jpg" alt="ad"></div>
+        </div>
     </div>
-    </center>
 
     <footer>
         <p>John 14:6 <i>“I am the way, the truth, and the life. No one comes to the Father except through Me."</i></p>
     </footer>
-
 </body>
 </html>
