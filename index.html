@@ -5,7 +5,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>angelpresence.333</title>
         <style>
-            body {
+            html, body {
                 font-family: Arial, sans-serif;
                 margin: 0;
                 padding: 0;
@@ -15,6 +15,10 @@
                 flex-direction: column;
                 min-height: 100vh;
             }
+			
+			body {
+				flex: 1;
+			}
     
             header {
 				background-image: url('hdbg.jpg');
@@ -77,12 +81,19 @@
             }
     
             footer {
+				left:0px;
+				bottom:0px;
                 background-color: #1e1e1e; /* Dark footer background */
                 color: #e0e0e0; /* Light text color for footer */
                 text-align: center;
                 padding: 10px 0;
                 width: 100%;
             }
+			
+			* html #footer {
+				position:absolute;
+				top:expression((0-(footer.offsetHeight)+(document.documentElement.clientHeight ? document.documentElement.clientHeight : document.body.clientHeight)+(ignoreMe = document.documentElement.scrollTop ? document.documentElement.scrollTop : document.body.scrollTop))+'px');
+			}
     
             img {
                 width: 100%;
@@ -136,6 +147,7 @@
 				<a href="https://rcbi-resources.yolasite.com/pdf-bibles-various-languages-and-translation.php" target="_blank">
 			<img src="icon.png" alt="ad">
 			</a>
+			<iframe src='https://widgets.sociablekit.com/twitter-feed/iframe/25453908' frameborder='0' width='250px' height='2880px'></iframe>
 		</div>
         </div>
 
@@ -202,6 +214,7 @@
             <div class="img"><a href="https://www.biblegateway.com/passage/?search=Exodus%2023%3A20&version=NKJV" target="_blank"><img src="ad1.jpg" alt="ad"></a></div>
             <div class="img"><a href="https://www.biblegateway.com/passage/?search=Psalm%2091&version=NIV" target="_blank"><img src="ad2.jpg" alt="ad"></a></div>
             <div class="img"><a href="https://www.biblegateway.com/passage/?search=Hebrews%2013%3A2&version=NIV" target="_blank"><img src="ad3.jpg" alt="ad"></a></div>
+			<iframe src='https://widgets.sociablekit.com/twitter-feed/iframe/25453907' frameborder='0' width='250px' height='3100px'></iframe>
         </div>
     </div>
 
